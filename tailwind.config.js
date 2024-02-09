@@ -10,7 +10,9 @@ export default {
         main:'#5A6B7C',
         secondary:'#ECB6C3',
         blanc:'#FFFFFF',
-        hove:'#ECB6C31A'
+        hove:'#ECB6C31A',
+        whitee:"#f4f5fe",
+        darkMain:"#43505F",
       }
     },
   },

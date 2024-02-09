@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.log{
+    background-image: url("../src/assets/coverlogin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 50;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* ou la largeur désirée */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb{
+    background-color: #ECB6C3; /* couleur de la poignée du défilement */
+    border-radius: 100px; /* bordure arrondie de la poignée */
+    box-shadow: inset 2px 2px 5px #ffffffb3;
+    z-index:5;
+}
