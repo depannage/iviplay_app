@@ -5,7 +5,7 @@ import {
     AiOutlineClose,
     AiOutlineMenu,
 } from "react-icons/ai";
-
+import { PrimeIcons } from 'primereact/api';
 
 // fin items
 const Navbar = () => {
@@ -45,7 +45,7 @@ const Navbar = () => {
         <div
             className={`fixed w-full h-14 bg-secondary z-[10] top-0 left-0 right-0  ${isScroll && "z-[100]   border-b-2"
             }`}>
-            <div className='flex items-center justify-around  w-full h-full p-6'>
+            <div className='flex items-center justify-between  w-full h-full p-2'>
                 <div className='md:flex-1 cursor-pointer -mt-2'>
                     <img
                         src={logo}
@@ -54,18 +54,18 @@ const Navbar = () => {
                         height={80}
                     />
                 </div>
-                <div className='hidden ml-32 lg:flex items-center justify-center   h-full p-6'>
-                    <ul className='flex items-center justify-center  w-full h-full p-6 gap-5'>
-                        <li className="hover:cursor-pointer hover:text-blue_ciel font-semibold">Services</li>
-                        <li className="hover:cursor-pointer hover:text-blue_ciel font-semibold">Logiciel</li>
-                        <li className="hover:cursor-pointer hover:text-blue_ciel font-semibold">Talents</li>
-                        <li className="hover:cursor-pointer hover:text-blue_ciel font-semibold">Apropos</li>
-                        <li className="hover:cursor-pointer hover:text-blue_ciel font-semibold">Blog</li>
-                    </ul>
+                <div className='hidden lg:flex items-center justify-between w-full   h-full p-6'>
+                    <h4>Tableau de Bord</h4>
+                    <h4 className={"text-white text-lg font-bold"}>Tableau de Bord</h4>
+                    <div className={"flex flex-row items-center gap-2 bg-white w-96 h-8 rounded-lg p-2"}>
+                        <span className={"pi pi-search text-gray-500"}></span>
+                        <input type={"text"} className={"h-full w-full outline-none text-gray-500"} placeholder={"Rechercher..."}/>
+                    </div>
+                    <h4>Tableau de Bord</h4>
                 </div>
-                <div className='md:flex-1 text-xl mr-2 ml-20'>
-                    <div className='cursor-pointer z-1000 md:hidden' onClick={handlClic}>
-                        <AiOutlineMenu size={45} />
+                <div className='md:flex-1 text-xl ml-20'>
+                    <div className='cursor-pointer z-1000 md:hidden hover:shadow-2xl transform ease-in duration-300' onClick={handlClic} >
+                        <AiOutlineMenu size={45} color={"#fff"}/>
                     </div>
                 </div>
                 <div className='hidden lg:flex flex-row mr-14 justify-around gap-5'>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <div
                     className={
                         active
-                            ? "fixed top-0 left-0 w-[75%] md:w-[45%] h-screen bg-white p-2 ease-in duration-500"
+                            ? "fixed top-0 left-0 w-[75%] md:w-[45%] h-screen bg-main text-white p-2 ease-in duration-500"
                             : "fixed left-[-100%] top-0 p-2 ease-in duration-500 z-0"
                     }>
                     <div className='flex flex-row  justify-between z-[1000]'>
