@@ -11,7 +11,7 @@ const LayoutDash = () => {
             <div>
                 <Navbar/>
             </div>
-            <main>
+            <main className={"darkMain"}>
                 <Outlet/>
             </main>
         </div>

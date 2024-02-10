@@ -12,7 +12,7 @@ import {RiMoneyDollarCircleLine} from "react-icons/ri";
 
 function Sidebar() {
     return (
-        <aside className='bg-main sidebar h-screen md:overflow-hidden custom-scrollbar  md:hover:overflow-y-auto pb-10  fixed max-w-[10%] min-w-[17%] drop-shadow-xl shadow-sm z-[99]'>
+        <aside className='bg-main sidebar h-screen md:overflow-hidden custom-scrollbar  md:hover:overflow-y-auto pb-10  fixed max-w-[16%] min-w-[17%] drop-shadow-xl shadow-sm z-[99]'>
             <div className='flex sticky top-0 z-50 h-14 bg-darkMain justify-center items-center w-full'>
                 <img src={logo} alt="logo" width={50} height={50}/>
             </div>

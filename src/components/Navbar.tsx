@@ -1,13 +1,9 @@
 //@ts-nocheck
 import React, { useEffect, useState } from "react";
 import logo from "../assets/Grouplogo.png";
-import {
-    AiOutlineClose,
-    AiOutlineMenu,
-} from "react-icons/ai";
-import { PrimeIcons } from 'primereact/api';
-
-// fin items
+import { AiOutlineClose,  AiOutlineMenu} from "react-icons/ai";
+import {Badge} from "antd";
+import {log1,log2,log3,log0} from '../assets'
 const Navbar = () => {
     const [opens, setOpens] = useState(false);
     const [opense, setOpense] = useState(false);
@@ -50,18 +46,32 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt='Picture of the author'
-                        width={80}
-                        height={80}
+                        width={70}
+                        height={70}
                     />
                 </div>
-                <div className='hidden lg:flex items-center justify-between w-full   h-full p-6'>
+                <div className='hidden lg:flex items-center justify-between w-full   h-full p-2'>
                     <h4>Tableau de Bord</h4>
                     <h4 className={"text-white text-lg font-bold"}>Tableau de Bord</h4>
                     <div className={"flex flex-row items-center gap-2 bg-white w-96 h-8 rounded-lg p-2"}>
                         <span className={"pi pi-search text-gray-500"}></span>
                         <input type={"text"} className={"h-full w-full outline-none text-gray-500"} placeholder={"Rechercher..."}/>
                     </div>
-                    <h4>Tableau de Bord</h4>
+                    <div className={"flex flex-row justify-around ml-14 gap-5"}>
+                        <button className={'text-white text-2xl'}>
+                            <img src={log0} alt="icon" width={27} height={27}/>
+                        </button>
+                        <button className={'text-white text-2xl'}>
+                            <img src={log1} alt="icon" width={25} height={25}/>
+                        </button>
+                        <button className={'text-white text-2xl'}>
+                            <img src={log2} alt="icon" width={25} height={25}/>
+                        </button>
+
+                        <button className={'text-white text-2xl'}>
+                            <img src={log3} alt="icon" width={25} height={25}/>
+                        </button>
+                    </div>
                 </div>
                 <div className='md:flex-1 text-xl ml-20'>
                     <div className='cursor-pointer z-1000 md:hidden hover:shadow-2xl transform ease-in duration-300' onClick={handlClic} >
@@ -76,19 +86,20 @@ const Navbar = () => {
                 className={
                     active ? "md:fixed top-0 left-0 w-full h-screen bg-black/70 z-10" : ""
                 }>
+                {/*in mobile */}
                 <div
                     className={
                         active
                             ? "fixed top-0 left-0 w-[75%] md:w-[45%] h-screen bg-main text-white p-2 ease-in duration-500"
                             : "fixed left-[-100%] top-0 p-2 ease-in duration-500 z-0"
                     }>
-                    <div className='flex flex-row  justify-between z-[1000]'>
+                    <div className='flex flex-row  justify-between z-[1000] -p-2'>
                         <div className='' onClick={() => router.push("/")}>
                             <img
                                 src={logo}
                                 alt='Picture of the author'
-                                width={80}
-                                height={80}
+                                width={70}
+                                height={70}
                             />
                         </div>
                         <div
