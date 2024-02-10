@@ -4,6 +4,7 @@ import logo from "../assets/Grouplogo.png";
 import { AiOutlineClose,  AiOutlineMenu} from "react-icons/ai";
 import {Badge} from "antd";
 import {log1,log2,log3,log0} from '../assets'
+import {Menu} from "./index.tsx";
 const Navbar = () => {
     const [opens, setOpens] = useState(false);
     const [opense, setOpense] = useState(false);
@@ -87,6 +88,7 @@ const Navbar = () => {
                     active ? "md:fixed top-0 left-0 w-full h-screen bg-black/70 z-10" : ""
                 }>
                 {/*in mobile */}
+
                 <div
                     className={
                         active
@@ -108,12 +110,7 @@ const Navbar = () => {
                             <AiOutlineClose />
                         </div>
                     </div>
-                    <div className='my-4 border-b border-gray-300'>
-                        <p className='w-[85%] md:w-[90%] py-4 mx-auto '>
-                            Que voulez-vous faire ?
-                        </p>
-                    </div>
-
+                    <Menu/>
                 </div>
             </div>
         </div>

@@ -10,14 +10,17 @@
     opacity: 50;
 }
 
+.menu{
+    height:calc(100vh - 140px);
+}
 .custom-scrollbar::-webkit-scrollbar {
-    width: 8px; /* ou la largeur désirée */
+    width: 6px; /* ou la largeur désirée */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb{
-    background-color: #ECB6C3; /* couleur de la poignée du défilement */
-    border-radius: 100px; /* bordure arrondie de la poignée */
-    box-shadow: inset 2px 2px 5px #ffffffb3;
+    background-color: #43505F; /* couleur de la poignée du défilement */
+    /* bordure arrondie de la poignée */
+
     z-index:5;
 }
 

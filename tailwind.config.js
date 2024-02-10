@@ -13,6 +13,10 @@ export default {
         hove:'#ECB6C31A',
         whitee:"#f4f5fe",
         darkMain:"#43505F",
+      },
+      colors:{
+        secondary:'#ECB6C3',
+        blanc:'#FFFFFF',
       }
     },
   },
