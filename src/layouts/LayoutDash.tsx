@@ -11,7 +11,7 @@ const LayoutDash = () => {
             <div>
                 <Navbar/>
             </div>
-            <main className={"bg-[#ffffff]"}>
+            <main className={"bg-[#ffffff] min-w-full"}>
                 <Outlet/>
             </main>
         </div>
