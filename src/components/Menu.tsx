@@ -1,18 +1,12 @@
 //@ts-nocheck
 import React, {useState} from 'react';
-import {
-    CoffeeOutlined,
-    HomeOutlined,
-    PlusSquareOutlined,
-    VideoCameraAddOutlined
-} from '@ant-design/icons';
-// @ts-ignore
 import {Menu} from 'antd';
 import type {MenuProps, MenuTheme} from 'antd/es/menu';
 import {Link} from "react-router-dom";
 import {useRoutes} from "react-router-dom";
 import {cat, connecteur, equipe, fil, log1, log3, logdash, mobile, plate, sm, state} from "../assets";
 import {LiaFlagSolid} from "react-icons/lia";
+import {DashboardOutlined} from "@ant-design/icons";
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -29,9 +23,10 @@ function getItem(
         label,
     } as MenuItem;
 }
-
+const url =window.location.pathname;
 const items: MenuItem[] = [
-    getItem(<Link to={'/home'} className={`flex gap-2 items-center  w-full`}>Tableau de bord</Link>, '1', <img src={logdash} width={20} height={20}/>),
+    getItem(<Link to={'/home'} className={`flex gap-2 items-center  w-full ${url==="/home" && 'bg-darkMain h-10 p-2 rounded-lg text-secondary'}`}><DashboardOutlined size={25}/> Tableau
+        de bord</Link>, '1'),
     getItem('Statistiques', 'sub1', <img src={state} width={20} height={20}/>, [
         getItem(<Link to="/entreprise/offre">St. d'usage</Link>, '2'),
         getItem(<Link to="/entreprise/articles">St. de Flux</Link>, '3'),
@@ -82,14 +77,13 @@ const Menus = () => {
     return (
         <>
             <Menu
-                // @ts-ignore
                 style={{width: 203, color: "#ffffff", fontsize: 14}}
                 defaultSelectedKeys={['1']}
                 defaultOpenKeys={['sub1']}
                 mode={mode}
                 theme={theme}
                 items={items}
-                className={'text-[12px] gap-3 font-bold overflow-hidden custom-scrollbar overflow-y-auto  menu min-w-full'}
+                className={'text-[12px] p-0 m-0 gap-3 font-bold overflow-hidden custom-scrollbar overflow-y-auto  menu min-w-full'}
             />
         </>
     );

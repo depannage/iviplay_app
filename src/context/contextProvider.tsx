@@ -10,7 +10,7 @@ interface ContextProviderProps {
 
 export const ContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
     const [showOrganise, setShowOrganiser] = useState(false)
-    const [current, setCurrent] = useState(0)
+    const [current, setCurrent] = useState(1)
     return <ContextApi.Provider value={{showOrganise, setShowOrganiser,current,setCurrent}}>{children}</ContextApi.Provider>;
 };
 

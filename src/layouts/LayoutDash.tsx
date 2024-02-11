@@ -3,7 +3,7 @@ import {Outlet} from "react-router-dom";
 
 const LayoutDash = () => {
     return (
-        <div>
+        <div >
             {/* <NavbarDash /> */}
            <div className={"hidden lg:flex"}>
                <Sidebar/>
@@ -11,7 +11,7 @@ const LayoutDash = () => {
             <div>
                 <Navbar/>
             </div>
-            <main className={"darkMain"}>
+            <main className={"bg-[#ffffff]"}>
                 <Outlet/>
             </main>
         </div>

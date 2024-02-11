@@ -10,5 +10,6 @@ import mobile from './mobile.png';
 import connecteur from './connecteur.png'
 import state from './state.png';
 import plate from './plate.png';
+import nbposte from './icons/allicons/stat/noir/nb_post.svg'
 import sm from './sm.png'
-export {log1,log2,log3,log0,logdash,fil,equipe,mobile,cat,connecteur,state,plate,sm}
+export {log1,log2,log3,log0,logdash,fil,equipe,mobile,cat,connecteur,state,plate,sm,nbposte}
