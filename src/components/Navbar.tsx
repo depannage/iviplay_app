@@ -5,12 +5,13 @@ import { AiOutlineClose,  AiOutlineMenu} from "react-icons/ai";
 import {Badge} from "antd";
 import {log1,log2,log3,log0} from '../assets'
 import {Menu} from "./index.tsx";
+import {useAppContext} from "../context/contextProvider.tsx";
 const Navbar = () => {
     const [opens, setOpens] = useState(false);
     const [opense, setOpense] = useState(false);
     const [active, setActive] = useState(false);
     const [isScroll, setIsScroll] = useState(false);
-
+    const {setSearch}=useAppContext()
     const handleOpenChange = (flag: boolean) => {
         setOpen(flag);
     };
@@ -56,7 +57,9 @@ const Navbar = () => {
                     <h4 className={"text-white text-lg font-bold"}>Tableau de Bord</h4>
                     <div className={"flex flex-row items-center gap-2 bg-white w-96 h-8 rounded-lg p-2"}>
                         <span className={"pi pi-search text-gray-500"}></span>
-                        <input type={"text"} className={"h-full w-full outline-none text-gray-500"} placeholder={"Rechercher..."}/>
+                        <input type={"text"} className={"h-full w-full outline-none text-gray-500"} placeholder={"Rechercher..."} onChange={
+                            (e:any)=>setSearch(e.target.value)
+                        }/>
                     </div>
                     <div className={"flex flex-row justify-around ml-14 gap-5"}>
                         <button className={'text-white text-2xl'}>

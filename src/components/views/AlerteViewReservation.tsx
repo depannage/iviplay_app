@@ -1,8 +1,8 @@
 //@ts-nocheck
-import {metricNbPost, metricNbPostAlerte} from "../../data";
+import {stateReservation} from "../../data";
 import {Table} from "antd";
 import {useAppContext} from "../../context/contextProvider.tsx";
-import {useEffect} from "react";
+
 
 
 const columns= [
@@ -30,14 +30,14 @@ const columns= [
             multiple: 2,
         },
     },
-    {
-        title: <label className={"hidden lg:block"}>Seuil</label>,
-        dataIndex: 'seuil',
-        sorter: {
-            compare: (a, b) => a.math - b.math,
-            multiple: 2,
-        },
-    },
+    // {
+    //     title: <label className={"hidden lg:block"}>Seuil</label>,
+    //     dataIndex: 'seuil',
+    //     sorter: {
+    //         compare: (a, b) => a.math - b.math,
+    //         multiple: 2,
+    //     },
+    // },
     {
         title: <label className={"hidden lg:block"}> Entite</label>,
         dataIndex: 'entite',
@@ -56,17 +56,12 @@ const columns= [
     },
 ];
 
-export default function AlerteView() {
+export default function AlerteViewReservation() {
     const {current,search}=useAppContext()
-    let dts1=[];
     let dts2=[]
+    dts2=stateReservation.filter(item=>item.metrique.toLowerCase()==search.toLowerCase() || item.entite.toLowerCase()==search.toLowerCase() || item.mesure==search || item.os.toLowerCase()==search.toLowerCase())
 
-            dts2=metricNbPostAlerte.filter(item=>item.metrique.toLowerCase()==search.toLowerCase() || item.entite.toLowerCase()==search.toLowerCase() || item.mesure==search || item.os.toLowerCase()==search.toLowerCase())
-            dts1=metricNbPost.filter(item=>item.metrique.toLowerCase()==search.toLowerCase() || item.entite.toLowerCase()==search.toLowerCase() || item.mesure==search || item.os.toLowerCase()==search.toLowerCase())
-
-
-    console.table(dts1)
     return (
-        <Table columns={columns} dataSource={current===1 ?dts1.length >0 ? dts1:metricNbPost:dts2.length>0 ?dts2:metricNbPostAlerte} className={"shadow border"} responsive={['xxl', 'xl', 'lg', 'md', 'sm', 'xs']}/>
+        <Table columns={columns} dataSource={dts2.length>0 ?dts2:stateReservation} className={"shadow border"} responsive={['xxl', 'xl', 'lg', 'md', 'sm', 'xs']}/>
     );
 }

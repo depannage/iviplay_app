@@ -38,3 +38,13 @@ export const metricsCard = [
     {title: "Taux de CO²", count: 16, icone: tco, component: 'co', isActif: true, isSelected: false, isAlert: true, seuil: 400, unite: "ppm", categorie: 'env', isEditeSeuil: false},
     {title: "Taux d'humidite", count: 16, icone:hum, component: 'humidite', isActif: true, isSelected: false, isAlert: true, seuil: 50, unite: "%", categorie: 'env', isEditeSeuil: false},
 ]
+
+export const stateReservation=[
+    {metrique: "Nombre de reservation de salles communes du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-22").toLocaleDateString() , mesure: "13", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles Iviflo du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-21").toLocaleDateString() , mesure: "5", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles Iviplay du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-21").toLocaleDateString() , mesure: "8", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles à l'etage 1 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toLocaleDateString() , mesure: "23", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles à l'etage 2 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-19").toLocaleDateString() , mesure: "2", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles à l'etage 3 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-19").toLocaleDateString() , mesure: "6", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+]
+
