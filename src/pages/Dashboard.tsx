@@ -6,9 +6,13 @@ import {metricsCard} from "../data";
 import {useAppContext} from "../context/contextProvider.tsx";
 
 const Dashboard = () => {
-    const {setCurrent,current}=useAppContext()
+    const {setCurrent,setCurrentCard}=useAppContext()
     const handlChange=(key)=>{
         setCurrent(key)
+    }
+    const affectation=(e:string)=>{
+        setCurrentCard("");
+        setCurrentCard(e)
     }
     return (
         <div className='page flex flex-col  lg:padding-container lg:h-screen'>
@@ -17,11 +21,11 @@ const Dashboard = () => {
                 <div className={"hidden min-w-full lg:flex flex-col lg:flex-row flex-wrap justify-start items-center gap-5 lg:ml-10  mt-2"}>
                     {
                         metricsCard?.map((items:any,index:number)=>(
-                            <CardDash key={index} title={items.title}/>
+                            <CardDash key={index} title={items.title} icons={items?.icone}/>
                         ))
                     }
                 </div>
-                <Tabs items={itmTabs1} className={"min-w-full ml-3"} type={'card'} onChange={handlChange} defaultActiveKey={2}/>
+                <Tabs items={itmTabs1} className={"min-w-full lg:ml-10 mt-5  lg:mt-14"} type={'card'} onChange={handlChange} defaultActiveKey={2}/>
             </div>
         </div>
     );

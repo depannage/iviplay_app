@@ -30,7 +30,7 @@ const columns= [
         },
     },
     {
-        title: 'Sueil',
+        title: <label className={"hidden lg:block"}>Seuil</label>,
         dataIndex: 'seuil',
         sorter: {
             compare: (a, b) => a.math - b.math,
@@ -38,7 +38,7 @@ const columns= [
         },
     },
     {
-        title: 'Entite',
+        title: <label className={"hidden lg:block"}> Entite</label>,
         dataIndex: 'entite',
         sorter: {
             compare: (a, b) => a.english - b.english,
@@ -52,13 +52,12 @@ const columns= [
             compare: (a, b) => a.english - b.english,
             multiple: 1,
         },
-
     },
 ];
 
 export default function AlerteView() {
     const {current}=useAppContext()
     return (
-        <Table columns={columns} dataSource={current===1 ?metricNbPost:metricNbPostAlerte} className={"shadow border"}/>
+        <Table columns={columns} dataSource={current===1 ?metricNbPost:metricNbPostAlerte} className={"shadow border"} responsive={['xxl', 'xl', 'lg', 'md', 'sm', 'xs']}/>
     );
 }

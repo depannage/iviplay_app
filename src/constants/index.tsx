@@ -5,6 +5,8 @@ export interface ContextProps {
     setCurrent:React.Dispatch<React.SetStateAction<number>>
     showOrganise:boolean,
     setShowOrganiser:React.Dispatch<React.SetStateAction<boolean>>;
+    currentCard:string,
+    setCurrentCard:React.Dispatch<React.SetStateAction<string>>
 }
 
 export const itmTabs1=[

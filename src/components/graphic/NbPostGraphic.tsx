@@ -58,7 +58,7 @@ export default function MultiAxisDemo() {
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
         const data = {
-            labels:metricNbPost.map((ite=>ite.dates)),
+            labels:metricNbPost.map((ite=>new Date(ite.dates).toLocaleDateString())),
             datasets: [
 
                 {
