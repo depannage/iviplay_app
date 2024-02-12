@@ -1,5 +1,5 @@
 import {createBrowserRouter} from "react-router-dom";
-import {Login,Dashboard} from '../pages'
+import {Login, Dashboard, StateUsage} from '../pages'
 import {LayoutDash} from "../layouts";
 
 const rootsApp=createBrowserRouter([
@@ -14,6 +14,10 @@ const rootsApp=createBrowserRouter([
                 path:'/home',
                 element:<Dashboard/>
             },
+            {
+                path:'/state/usage',
+                element: <StateUsage/>
+            }
         ]
     }
 ])

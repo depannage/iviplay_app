@@ -16,7 +16,6 @@
     "@syncfusion/ej2-react-charts": "^19.4.50",
     "@syncfusion/ej2-react-grids": "^19.4.50",
     "antd": "^5.14.0",
-    "chartjs": "^0.3.24",
     "primeicons": "^6.0.1",
     "primereact": "^10.5.0",
     "react": "^18.2.0",

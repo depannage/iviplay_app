@@ -57,3 +57,27 @@ export const stateInscrit=[
     {metrique: "Nombre d'inscriptions aux formulaires du jour via Desk", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 42, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
 ]
 
+export const usageState=[
+    {metrique: "Nombre de telechargements unitaires d'IOS du jour", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 45, unite: 'telechargements', selected: false, codeDesc: 'nb_download'},
+    {metrique: "Nombre de telechargements unitaires d'android du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 56, unite: 'telechargements', selected: false, codeDesc: 'nb_download'},
+
+    {metrique: "Nombre d'inscriptions aux formulaires du jour sur Android", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 123, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour sur IOS", entite: "Iviplay", os: "IOS", dates: new Date("2023-12-20").toDateString(), mesure: 110, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour sur Desk", entite: "Iviplay", os: "Desk", dates: new Date("2023-12-20").toDateString(), mesure: 42, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+
+    {metrique: "Nombre de connexions IOS du jour", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 782, selected: false, codeDesc: 'nb_connect', unite: 'connexions'},
+    {metrique: "Nombre de connexions android du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 432, selected: false, codeDesc: 'nb_connect', unite: 'connexions'},
+    {metrique: "Nombre d’activations du jour de l’application IOS", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 346, selected: false, codeDesc: 'nb_activation', unite: 'activations'},
+    {metrique: "Nombre d’activations du jour de l’application android", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 312, selected: false, codeDesc: 'nb_activation', unite: 'activations'},
+    {metrique: "Duree moyenne du jour d’activation sur IOS", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 18, selected: false, codeDesc: 'duree_activation', unite: 'heures'},
+    {metrique: "Duree moyenne du jour d’activation sur android", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 16, selected: false, codeDesc: 'duree_activation', unite: 'heures'},
+    {metrique: "Duree moyenne de veille du jour sur IOS", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 7, selected: false, codeDesc: 'duree_veille', unite: 'heures'},
+    {metrique: "Duree moyenne de veille du jour sur Android", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 8, selected: false, codeDesc: 'duree_veille', unite: 'heures'},
+    {metrique: "Nombre de jours d’utilisation sur IOS", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 48, selected: false, codeDesc: 'jr_utilisation', unite: 'jours'},
+    {metrique: "Nombre de jours d’utilisation sur android", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 40, selected: false, codeDesc: 'jr_utilisation', unite: 'jours'},
+    {metrique: "Nombre moyenne du jour de changements de modes sur IOS", entite: "Iviplay", os: "IOS", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 986, selected: false, codeDesc: 'nb_change', unite: 'clics'},
+    {metrique: "Nombre moyenne du jour de changements de modes sur android", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 986, selected: false, codeDesc: 'nb_change', unite: 'clics'},
+    {metrique: "Nombre moyenne du jour d’ouverture de services sur IOS", entite: "Iviplay", os: "IOS", usager: "Prestataire", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 774, selected: false, codeDesc: 'nb_ouverture', unite: 'clics'},
+    {metrique: "Nombre moyenne du jour d’ouverture de services sur android", entite: "Iviplay", os: "android", usager: "Prestataire", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 704, selected: false, codeDesc: 'nb_ouverture', unite: 'clics'},
+]
+

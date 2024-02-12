@@ -17,4 +17,6 @@ export {default as NbReservationGraphic} from './graphic/NbReservationGrapgic.ts
 export {default as AlerteInscription} from './views/AlerteInscription.tsx';
 export {default as NbCardInscription} from './ViewsCard/NbCardInscription.tsx';
 export {default as NbInscription} from './graphic/NbInscription.tsx';
-export {default as CardDashMobile} from './CardDashMobile.tsx'
+export {default as CardDashMobile} from './CardDashMobile.tsx';
+export {default as ViewUsage} from './StateUsage/ViewUsage.tsx';
+export {default as NbCardUsage} from './ViewsCard/NbCardUsage.tsx';

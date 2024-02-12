@@ -28,7 +28,7 @@ const items: MenuItem[] = [
     getItem(<Link to={'/home'} className={`flex gap-2 items-center  w-full ${url==="/home" && 'bg-darkMain h-10 p-2 rounded-lg text-secondary'}`}><DashboardOutlined size={25}/> Tableau
         de bord</Link>, '91'),
     getItem('Statistiques', 'sub2', <img src={state} width={20} height={20}/>, [
-        getItem(<Link to="/entreprise/offre">St. d'usage</Link>, '92'),
+        getItem(<Link to="/state/usage" className={`flex gap-2 items-center  w-full ${url==="/state/usage" && 'bg-darkMain h-10 p-2 rounded-lg text-secondary'}`}>St. d'usage</Link>, '92'),
         getItem(<Link to="/entreprise/articles">St. de Flux</Link>, '93'),
         getItem(<Link to={'/entreprise/interview'}>St. Fil Attente</Link>, '94'),
         getItem(<Link to={'/entreprise/interview'}>St. d'environement</Link>, '95'),

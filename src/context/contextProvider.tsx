@@ -13,7 +13,11 @@ export const ContextProvider: React.FC<ContextProviderProps> = ({ children }) =>
     const [current, setCurrent] = useState(2)
     const [currentCard, setCurrentCard] = useState("Nombre de post publies")
     const [search, setSearch] = useState("all")
-    return <ContextApi.Provider value={{search, setSearch,showOrganise, setShowOrganiser,current,setCurrent,currentCard, setCurrentCard}}>{children}</ContextApi.Provider>;
+    const [searchEntite, setSearchEntite] = useState("")
+    const [searchOs, setSearchOs] = useState("")
+    const [searchDatef, setSearchDatef] = useState("")
+    const [searchDated, setSearchDated] = useState("")
+    return <ContextApi.Provider value={{searchDated, setSearchDated,searchDatef, setSearchDatef,searchOs, setSearchOs,searchEntite, setSearchEntite,search, setSearch,showOrganise, setShowOrganiser,current,setCurrent,currentCard, setCurrentCard}}>{children}</ContextApi.Provider>;
 };
 
 export default ContextApi;

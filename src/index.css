@@ -70,3 +70,15 @@
 .dash{
     width:100%;
 }
+
+.ant-menu-submenu ant-menu-submenu-inline{
+    pidding:0;
+}
+
+.element.style{
+    padding-left:0px
+}
+
+.ant-menu-submenu-title{
+    width:100%
+}

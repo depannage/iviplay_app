@@ -3,9 +3,9 @@ import {
     AlerteView,
     AlerteViewReservation, NbCardInscription,
     NbCardPost,
-    NbCardReservation, NbInscription,
+    NbCardReservation, NbCardUsage, NbInscription,
     NbPostGraphic,
-    NbReservationGraphic
+    NbReservationGraphic, ViewUsage
 } from "../components";
 
 export interface ContextProps {
@@ -17,6 +17,14 @@ export interface ContextProps {
     setCurrentCard:React.Dispatch<React.SetStateAction<string>>;
     search:string,
     setSearch:React.Dispatch<React.SetStateAction<string>>
+    searchEntite:string,
+    setSearchEntite:React.Dispatch<React.SetStateAction<string>>
+    searchOs:string,
+    setSearchOs:React.Dispatch<React.SetStateAction<string>>
+    searchDatef:string,
+    setSearchDatef:React.Dispatch<React.SetStateAction<string>>
+    searchDated:string,
+    setSearchDated:React.Dispatch<React.SetStateAction<string>>
 }
 
 export const poste=[
@@ -256,6 +264,26 @@ export const download=[
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Graphic</h1>,
         key: 4,
+        children: <NbPostGraphic/>,
+    },
+]
+
+{/*statistique d'usage*/}
+export const stateUsages=[
+    {
+        label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Alerte</h1>,
+        key: 1,
+        children: <ViewUsage/>,
+    },
+    {
+        label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Carte</h1>,
+        key: 2,
+        children: <NbCardUsage/>,
+
+    },
+    {
+        label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Graphic</h1>,
+        key: 3,
         children: <NbPostGraphic/>,
     },
 ]
