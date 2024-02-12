@@ -28,6 +28,6 @@ export const itmTabs1=[
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Graphic</h1>,
         key: 4,
-        // children: <NbPostGraphic/>,
+        children: <NbPostGraphic/>,
     },
 ]

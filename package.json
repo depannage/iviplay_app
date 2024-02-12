@@ -24,7 +24,10 @@
     "react-router-dom": "^6.22.0",
     "rechartjs": "^1.0.1",
     "recharts": "^2.12.0",
-    "redux-toolkit": "^1.1.2"
+    "redux-toolkit": "^1.1.2",
+    "@syncfusion/ej2": "^19.4.48",
+    "@syncfusion/ej2-react-charts": "^19.4.50",
+    "@syncfusion/ej2-react-grids": "^19.4.50"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",

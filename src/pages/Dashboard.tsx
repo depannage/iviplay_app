@@ -12,23 +12,16 @@ const Dashboard = () => {
     }
     return (
         <div className='page flex flex-col  lg:padding-container lg:h-screen'>
-            <div  className='flex flex-col justify-center container mx-auto lx:px-0 mt-14 padding-container lg:ml-14 dash'>
+            <div  className='w-[100%] h-[100%] flex flex-col  container mx-auto lx:px-0 mt-14 padding-container lg:ml-14 dash'>
                      {/*   list of cards*/}
-                <div className={"min-w-full flex flex-col lg:flex-row flex-wrap justify-start items-center gap-5 lg:ml-10 lg:mt-5 mt-2"}>
+                <div className={"hidden min-w-full lg:flex flex-col lg:flex-row flex-wrap justify-start items-center gap-5 lg:ml-10  mt-2"}>
                     {
                         metricsCard?.map((items:any,index:number)=>(
                             <CardDash key={index} title={items.title}/>
                         ))
                     }
                 </div>
-                <div className={"lg:w-full flex flex-col lg:flex-row flex-wrap justify-start items-center gap-5 lg:ml-10 lg:mt-5 mt-2"}>
-                    <Tabs items={itmTabs1} className={"min-w-full"} type={'card'} onChange={handlChange} defaultActiveKey={2}/>
-                </div>
-                {current===4 &&
-                    <div>
-                        <NbPostGraphic/>
-                    </div>
-                }
+                <Tabs items={itmTabs1} className={"min-w-full ml-3"} type={'card'} onChange={handlChange} defaultActiveKey={2}/>
             </div>
         </div>
     );

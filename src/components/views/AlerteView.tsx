@@ -52,6 +52,7 @@ const columns= [
             compare: (a, b) => a.english - b.english,
             multiple: 1,
         },
+
     },
 ];
 

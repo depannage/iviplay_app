@@ -7,6 +7,13 @@ export const metricNbPost=[
     {metrique: "Nombre de posts hygiene et proprete publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 18, unite: 'posts',seuil:10},
     {metrique: "Nombre de posts sur la sécurité publies", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-06-20").toDateString(), terminal: "Alpha", mesure: 25,unite: 'posts',seuil:10},
     {metrique: "Nombre de posts hygiene et proprete publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 5, unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts Yammers publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 10, unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts hygiene et proprete publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-02-20").toDateString(), terminal: "Alpha", mesure: 7,unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts sur la sécurité publies", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-04-20").toDateString(), terminal: "Alpha", mesure: 7,  unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts Yammers publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-10-20").toDateString(), terminal: "Alpha", mesure: 12, unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts hygiene et proprete publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 18, unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts sur la sécurité publies", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-06-20").toDateString(), terminal: "Alpha", mesure: 25,unite: 'posts',seuil:10},
+    {metrique: "Nombre de posts hygiene et proprete publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 5, unite: 'posts',seuil:10},
 ]
 export const metricNbPostAlerte=[
     {metrique: "Nombre de posts Yammers publies du jour", entite: "Iviplay", os: "Android", usager: "Occupant", dates: new Date("2023-12-20").toDateString(), terminal: "Alpha", mesure: 12, unite: 'posts',seuil:10},
