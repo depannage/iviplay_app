@@ -11,7 +11,7 @@ interface ContextProviderProps {
 export const ContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
     const [showOrganise, setShowOrganiser] = useState(false)
     const [current, setCurrent] = useState(2)
-    const [currentCard, setCurrentCard] = useState("")
+    const [currentCard, setCurrentCard] = useState("Nombre de post publies")
     const [search, setSearch] = useState("all")
     return <ContextApi.Provider value={{search, setSearch,showOrganise, setShowOrganiser,current,setCurrent,currentCard, setCurrentCard}}>{children}</ContextApi.Provider>;
 };

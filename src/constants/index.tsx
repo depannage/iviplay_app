@@ -1,4 +1,12 @@
-import {AlerteView, AlerteViewReservation, NbCardPost, NbPostGraphic} from "../components";
+import {
+    AlerteInscription,
+    AlerteView,
+    AlerteViewReservation, NbCardInscription,
+    NbCardPost,
+    NbCardReservation, NbInscription,
+    NbPostGraphic,
+    NbReservationGraphic
+} from "../components";
 
 export interface ContextProps {
     current:number,
@@ -50,13 +58,13 @@ export const reservation=[
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Carte</h1>,
         key: 3,
-        children: <NbCardPost/>,
+        children: <NbCardReservation/>,
 
     },
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Graphic</h1>,
         key: 4,
-        children: <NbPostGraphic/>,
+        children: <NbReservationGraphic/>,
     },
 ]
 export const tauxCo=[
@@ -159,24 +167,24 @@ export const inscription=[
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Alerte</h1>,
         key: 1,
-        children: <AlerteView/>,
+        // children: <Alerte/>,
     },
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Liste</h1>,
         key: 2,
-        children: <AlerteView/>,
+        children: <AlerteInscription/>,
 
     },
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Carte</h1>,
         key: 3,
-        children: <NbCardPost/>,
+        children: <NbCardInscription/>,
 
     },
     {
         label: <h1 className={"lg:w-52 font-bold text-[15px] text-gray-700"}>Graphic</h1>,
         key: 4,
-        children: <NbPostGraphic/>,
+        children: <NbInscription/>,
     },
 ]
 export const module=[

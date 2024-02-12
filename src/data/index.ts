@@ -40,11 +40,20 @@ export const metricsCard = [
 ]
 
 export const stateReservation=[
-    {metrique: "Nombre de reservation de salles communes du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-22").toLocaleDateString() , mesure: "13", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
-    {metrique: "Nombre de reservation de salles Iviflo du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-21").toLocaleDateString() , mesure: "5", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
-    {metrique: "Nombre de reservation de salles Iviplay du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-21").toLocaleDateString() , mesure: "8", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
-    {metrique: "Nombre de reservation de salles à l'etage 1 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toLocaleDateString() , mesure: "23", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
-    {metrique: "Nombre de reservation de salles à l'etage 2 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-19").toLocaleDateString() , mesure: "2", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
-    {metrique: "Nombre de reservation de salles à l'etage 3 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-19").toLocaleDateString() , mesure: "6", usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles communes du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-22").toLocaleDateString() , mesure: 1350, usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles Iviflo du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-21").toLocaleDateString() , mesure: 58, usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles Iviplay du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-21").toLocaleDateString() , mesure: 83, usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles à l'etage 1 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toLocaleDateString() , mesure: 823, usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles à l'etage 2 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-19").toLocaleDateString() , mesure: 82, usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+    {metrique: "Nombre de reservation de salles à l'etage 3 du jour", entite: "Iviplay", os: "Android", dates: new Date("2023-12-19").toLocaleDateString() , mesure: 600, usager: '', selected: false, terminal: '', codeDesc: '', unite: 'reservation'},
+]
+
+export const stateInscrit=[
+    {metrique: "Nombre d'inscriptions aux formulaires du jour via Android", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 123, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour via IOS", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 110, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour via Desk", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 42, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour via Android", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 123, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour via Ios", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 110, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
+    {metrique: "Nombre d'inscriptions aux formulaires du jour via Desk", entite: "Iviplay", os: "Android", dates: new Date("2023-12-20").toDateString(), mesure: 42, usager: '', selected: false, terminal: '', codeDesc: 'nb_inscrit', unite: 'inscriptions'},
 ]
 

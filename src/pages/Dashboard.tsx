@@ -1,5 +1,5 @@
 //@ts-nocheck
-import {CardDash, NbPostGraphic} from "../components";
+import {CardDash, CardDashMobile, NbPostGraphic} from "../components";
 import {Tabs} from "antd";
 import {
     activeApp,
@@ -35,6 +35,9 @@ const Dashboard = () => {
                             <CardDash key={index} title={items.title} icons={items?.icone}/>
                         ))
                     }
+                </div>
+                <div className={"lg:hidden w-[100%]"}>
+                    <CardDashMobile/>
                 </div>
                 <Tabs items={
                     currentCard=="Nombre de post publies" ? poste: currentCard=="Nombre de reservation de salle" ? reservation: currentCard=="Taux d'humidite" ? tauxH :currentCard=="Taux de CO²" ? tauxCo :currentCard=="Nombre d'inscriptions aux formulaires" ? inscription: currentCard=="Nombre de connexions via le module d’authentification" ? connexion : currentCard=="Nombre de services actifs" ? service :currentCard=="Nombre de telechargements unitaires" ? download :currentCard=="Nombre d’activations de l’application"? activeApp:""
